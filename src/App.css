@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+._main {
+  width: 100%;
+  height: 100vh;
+  background: #56CCF2;
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+  background: linear-gradient(to right, #2F80ED, #56CCF2); 
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+._card {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+}
+
+._card  h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-right: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+._card h3 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+._list {
+  margin-top: 0.7rem;
+}
+
+._list li {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+}
+
+._titleParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+._button {
+  background-color: black;
   color: white;
+  border: none;
+  padding: 2.5% 0;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.6s;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+._button:hover {
+  background-color: #56CCF2;
+  color:black;
+  transition: all 0.6s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+._modal {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+}
+
+._modal p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+._modal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5rem;
+  margin-top: 0.6rem;
+}
+
+._modalParent {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+._displaynone {
+  display: none;
 }
