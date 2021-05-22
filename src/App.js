@@ -15,7 +15,7 @@ function App() {
       <div className='_card'>
         <div className='_titleParent'>
          <h1> Giber's web profile </h1> 
-         <img src={image} width='30px' height='30px'></img> 
+         <img src={image} width='30px' height='30px' alt='computer'></img> 
         </div>
         
         <h3> Ten things about me! </h3>
@@ -40,7 +40,7 @@ function App() {
     <div className={show ? '_modalParent' : '_displaynone'} onClick={() => setShow(false)}>
     <div className='_modal'>
       <p>Oriana is the best teacher in the world!</p>
-      <img src={teacher}></img> 
+      <img src={teacher} alt='teacher'></img> 
     </div>
     </div>
  
